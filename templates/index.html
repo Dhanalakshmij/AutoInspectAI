@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AutoInspectAl 🚗</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        h2 {
+            color: #00c3ff;
+        }
+        video {
+            width: 80%;
+            border-radius: 10px;
+            border: 3px solid #00c3ff;
+        }
+        .info {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>🚗 Live ADAS - AutoInspectAl Assistant</h2>
+    <img src="{{ url_for('video_feed') }}" width="80%">
+    <div class="info">
+        <p>🔹 Lane Detection | 🔹 Object Tracking | 🔹 Speed Sign Detection</p>
+    </div>
+</body>
+</html>
